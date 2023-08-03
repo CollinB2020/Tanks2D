@@ -1,0 +1,114 @@
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "33e3a9a5-5d1a-422a-bd57-1ea808079b59",
+            "actions": [
+                {
+                    "name": "JoystickMovement",
+                    "type": "Value",
+                    "id": "6c5f3946-abad-44af-9687-0e298757fc02",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Touch0Tap",
+                    "type": "Button",
+                    "id": "52298620-ac76-4e58-9b59-c46b336f3e86",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Touch1Tap",
+                    "type": "Button",
+                    "id": "458cd1ef-23be-4582-8792-66904e9250a3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Touch0",
+                    "type": "Value",
+                    "id": "a0dc5feb-0aff-4311-beca-b6c08eb5f15d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Touch1",
+                    "type": "Value",
+                    "id": "23833ee6-0918-44a5-a4c7-6f1014c617b8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2654d62a-5806-492d-84c2-d02fa5329782",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JoystickMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f8a38eac-bd5a-482a-ae1a-3070cb6644e6",
+                    "path": "<Touchscreen>/touch0/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touch0Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a58a1278-ba92-42c8-bdbe-31bcb8a35bc3",
+                    "path": "<Touchscreen>/touch1/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touch1Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83f397ec-33aa-4252-b808-47f0ec695dd6",
+                    "path": "<Touchscreen>/touch0/startPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touch0",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5f14e7d-5cd3-4de2-8c3f-ee4d6196db0d",
+                    "path": "<Touchscreen>/touch1/startPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touch1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
