@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -346,7 +346,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 321643819}
-  - {fileID: 1240049560}
+  - {fileID: 1240049559}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 321643818}
-  LevelEndMenu: {fileID: 1240049559}
+  LevelEndMenu: {fileID: 1240049560}
 --- !u!1 &317103642
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +442,7 @@ RectTransform:
   m_GameObject: {fileID: 321643818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1396992119}
@@ -451,7 +451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 154, y: 134}
+  m_AnchoredPosition: {x: 124, y: 111}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &321643820
@@ -16029,6 +16029,42 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: AdvanceLevels
       objectReference: {fileID: 0}
+    - target: {fileID: 67424907044880257, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 67424907294548640, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 229115663}
+    - target: {fileID: 67424907294548640, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 67424908671812974, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 229115663}
+    - target: {fileID: 67424908671812974, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AdvanceLevels
+      objectReference: {fileID: 0}
+    - target: {fileID: 67424908876700705, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 229115663}
+    - target: {fileID: 67424908876700705, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevelSelect
+      objectReference: {fileID: 0}
     - target: {fileID: 7106671795361040481, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
       propertyPath: m_Name
       value: LevelEndMenu
@@ -16119,14 +16155,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
---- !u!1 &1240049559 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7106671795361040481, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+--- !u!224 &1240049559 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
   m_PrefabInstance: {fileID: 1240049558}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1240049560 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7106671795361040486, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+--- !u!1 &1240049560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 67424907044880257, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
   m_PrefabInstance: {fileID: 1240049558}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1396992118

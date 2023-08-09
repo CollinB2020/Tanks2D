@@ -213,7 +213,7 @@ MonoBehaviour:
   angularVelocityTower: 0
   startingTrackRotation: 0
   angularVelocityTracks: 150
-  moveSpeed: 1.5
+  moveSpeed: 3
   collisionOffset: 0.05
   movementFilter:
     useTriggers: 0
