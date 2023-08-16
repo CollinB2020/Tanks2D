@@ -265,7 +265,7 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   healthManager: {fileID: 5863618256835613405}
   startingRotation: 180
-  angularVelocity: 50
+  angularVelocity: 300
   ExplosionObject: {fileID: 139366, guid: 1b8ecf5c58ea1c54da6bb35f6ccc0fef, type: 3}
 --- !u!114 &8021162290610873078
 MonoBehaviour:
@@ -280,13 +280,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformController: {fileID: 7674325445295515776}
-  directionRefreshRate: 0.25
-  fireRefreshRate: 0.15
-  randomDirectionRate: 0.2
-  lookAtPlayerRate: 0.5
-  misfireRate: 0.02
-  fireWhileAimedRate: 0.8
-  debugMode: 1
+  playerTankController: {fileID: 0}
+  directionRefreshTime: 0.15
+  randomDirectionRate: 0.05
+  misfireRate: 0
+  fireWhileAimedRate: 0.9
+  aimSampleRate: 3
+  leadTargetAmount: 1
+  projectileSpeed: 8
+  debugMode: 0
 --- !u!114 &5863618256835613405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +720,7 @@ MonoBehaviour:
   muzzle: {fileID: 7530069376332599147}
   secondaryMuzzle: {fileID: 7530069376332599147}
   projectile: {fileID: 1223316484106891944, guid: 7c6921555b2700543a5355ef9ede0402, type: 3}
-  msBetweenShots: 500
+  msBetweenShots: 250
   muzzleVelocity: 15
 --- !u!4 &7530069376332599147 stripped
 Transform:

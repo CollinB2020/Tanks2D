@@ -13,14 +13,13 @@ public class PlatformAGun : MonoBehaviour
 
     //Projectile properties
     public Projectile projectile;
-    public float msBetweenShots = 100;
+    public float msBetweenShots = 500;
     public float muzzleVelocity = 5;
 
-    float nextShotTime;
+    private float nextShotTime = 0f;
 
     public void Shoot()
     {
-        //Debug.Log("Shoot");
         if (Time.time > nextShotTime)
         {
             nextShotTime = Time.time + msBetweenShots / 1000;

@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629563d35ffd5074ba79705f825c1ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  damage: 10
+  speed: 8
+  damage: 30
   numBounces: 1
   collisionOffset: 0.05
   RaycastPoint: {fileID: 293925171013192634}

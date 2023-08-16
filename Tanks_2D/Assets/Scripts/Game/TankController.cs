@@ -56,12 +56,18 @@ public class TankController : MonoBehaviour, IDamageable
     public void TakeHit(float damage) { healthManager.TakeHealth(damage); }
     public float GetTankRotation() { return rb.rotation; }
     public Vector3 GetTankPosition() { return rb.position; }
-    public void StopRotation() { targetTrackRotation = GetTankRotation(); }
+    public void StopRotation() { 
+        targetTrackRotation = GetTankRotation();
+        isMoving = false;
+    }
     public void SetTowerRotation(float _target) { tower.SetRotation(_target); }
     public void SetTargetTrackRotation(float _target) { targetTrackRotation = _target; }
 
+    private bool isMoving = false;
+    public bool IsMoving() { return isMoving; }
     public bool TryMove(Vector2 direction)
     {
+
         if (direction != Vector2.zero)
         {
             // Check for potential collisions
@@ -74,10 +80,12 @@ public class TankController : MonoBehaviour, IDamageable
             if (count == 0)
             {
                 rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+                isMoving = true;
                 return true;
             }
             else
             {
+                isMoving = false;
                 return false;
             }
         }
@@ -86,7 +94,6 @@ public class TankController : MonoBehaviour, IDamageable
             // Can't move if there's no direction to move in
             return false;
         }
-
     }
 
 

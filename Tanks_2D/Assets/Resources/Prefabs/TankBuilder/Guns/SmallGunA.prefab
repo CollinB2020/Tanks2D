@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   muzzle: {fileID: 7227466210885153929}
   secondaryMuzzle: {fileID: 7227466210885153929}
-  msBetweenShots: 100
+  msBetweenShots: 300
   muzzleVelocity: 5
 --- !u!1 &1167126274200355641
 GameObject:

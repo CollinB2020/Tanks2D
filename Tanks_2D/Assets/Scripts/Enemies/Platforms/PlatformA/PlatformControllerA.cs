@@ -68,9 +68,20 @@ public class PlatformControllerA : MonoBehaviour, IDamageable
         if (debugMode) { Debug.DrawLine(this.transform.position, playerTransform.position, Color.green, 0.25f); }
         return !Physics2D.Linecast(this.transform.position, playerTransform.position, collisionLayerMask);
     }
+    public bool hasPointView(Vector3 _position)
+    {
+        if (debugMode) { Debug.DrawLine(this.transform.position, _position, Color.green, 0.25f); }
+        return !Physics2D.Linecast(this.transform.position, _position, collisionLayerMask);
+    }
     public void LookAtPlayer()
     {
         Vector3 dir = playerTransform.position - this.transform.position;
+        float angle = Mathf.Atan2(dir.y, dir.x) * 180 / Mathf.PI;
+        SetTargetRotation(angle);
+    }
+    public void LookAtLoc(Vector3 _location)
+    {
+        Vector3 dir = _location - this.transform.position;
         float angle = Mathf.Atan2(dir.y, dir.x) * 180 / Mathf.PI;
         SetTargetRotation(angle);
     }
@@ -82,5 +93,29 @@ public class PlatformControllerA : MonoBehaviour, IDamageable
 		Instantiate(ExplosionObject, gameObject.transform.position, Quaternion.identity);
 
         Destroy(this.gameObject);
+    }
+
+    public Vector3 GetPlayerLocation()
+    {
+        return playerTransform.position;
+    }
+
+    public float DistanceToPlayer()
+    {
+        //Get player coordinates
+        Vector3 playerLoc = playerTransform.position;
+
+        //Get difference in coordinates
+        Vector2 distance;
+        distance.x = Mathf.Abs(gameObject.transform.position.x - playerLoc.x);
+        distance.y = Mathf.Abs(gameObject.transform.position.y - playerLoc.y);
+
+        return Mathf.Sqrt(Mathf.Pow(distance.x, 2) + Mathf.Pow(distance.y, 2));
+      
+    }
+
+    public float GetPlayerRotation()
+    {
+        return playerTransform.eulerAngles.z;
     }
 }

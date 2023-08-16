@@ -16656,6 +16656,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 143840286319180268, guid: 9f4d10619cc10d64896a930e4238f9c3, type: 3}
   m_PrefabInstance: {fileID: 143840284734897965}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1718765253 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 143840286319180265, guid: 9f4d10619cc10d64896a930e4238f9c3, type: 3}
+  m_PrefabInstance: {fileID: 143840284734897965}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05619d73da8ed5040add93a443d83178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1744981750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16719,6 +16730,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1718765249}
+    - target: {fileID: 8021162290610873078, guid: e5856eacc465ef0428317c394f57c271, type: 3}
+      propertyPath: playerTankController
+      value: 
+      objectReference: {fileID: 1718765253}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5856eacc465ef0428317c394f57c271, type: 3}
 --- !u!1 &1766492967
@@ -16953,6 +16968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelEndMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 67424907044880257, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16983,7 +17002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -1.000061
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
       propertyPath: m_SizeDelta.y
@@ -17019,11 +17038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17036,6 +17055,34 @@ PrefabInstance:
     - target: {fileID: 67424907044880262, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 67424907294548640, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 229115663}
+    - target: {fileID: 67424907294548640, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 67424908671812974, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 229115663}
+    - target: {fileID: 67424908671812974, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AdvanceLevels
+      objectReference: {fileID: 0}
+    - target: {fileID: 67424908876700705, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 229115663}
+    - target: {fileID: 67424908876700705, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevelSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 67424908971750172, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.2886963
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9610d35044ce4ac4e960c5b4ab8d0674, type: 3}
